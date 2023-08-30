@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    background-color: #fff;
+    color: #828282;
+}
+
+header {
+    color: #222222;
+    background-color: #ff6600;
+    font-weight: bold;
+    padding: 0.2em 0.5em;
+}
+
+main {
+    background-color: rgb(246, 246, 239);
+    padding: 1em;
+}
+
+label {
+    padding-top: 1em;
+    display: block;
+}
+
+input[type="text"],input[type="url"] {
+    width: 100%;
+    font-family: monospace;
+    font-size: 10pt;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+.output {
+    display: block;
+    border: 1px solid #ccc;
+}
+
+input[type="text"],input[type="url"], .output {
+    padding: 0.2em;
+    border-width: 1px;
+    font-size: inherit;
+    font-family: monospace;
+    border-radius: 2px;
+}
+
+button {
+    margin: 0.3em 0;
+}
+
+.error {
+    color: #ff6600;
+    font-size: 0.8em;
+}

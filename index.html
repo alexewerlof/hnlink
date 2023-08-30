@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker News Link Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Hacker News Link Generator</header>
+    <main id="app">
+        <label for="title">Title</label>
+        <input id="title" type="text" v-model="title" maxlength="80" placeholder="Google">
+        <div class="error">{{titleError}}</div>
+        
+        <label for="url">URL</label>
+        <input id="url" type="url" v-model="url" placeholder="https://www.google.com">
+        <div class="error">{{urlError}}</div>
+
+        <!-- submitlink is set if there are no errors -->
+        <div v-if="submitlink">
+            <label>Href</label>
+            <div class="output">
+                <code>{{submitlink}}</code>
+            </div>
+            <div>
+                <button @click="copySubmitlinkToClipboard()" title="Copy href to clipboard">Copy</button>
+            </div>
+            <label>Rich Text</label>
+            <div class="output">
+                <a :href="submitlink" target="_blank">{{title}}</a>
+            </div>
+            <div>
+                <button @click="copyRichTextToClipboard()" title="Copy Rich Text Link to clipboard">Copy</button>
+            </div>
+        </div>
+
+        <p>
+            Put a title and url to generate a link that will
+            populate those fields in the Hacker News submit
+            page ready to go.
+            <a href="https://github.com/userpixel/hnlink" target="_blank">Source code</a>.
+        </p>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+# Intro
+
+This is a tiny web application that takes a URL and
+title to generate a link that will directly take you to the Hacker News submit page.
+
+The link can be copied in plain text or rich text format.
+
+## Use case
+
+Putting a link in your pages (e.g. blog posts
+or newsletters) to make it easier for your
+readers to share it on Hackernews.
+
+If a post has already been submitted, a resubmit counts as an upvote.
+
+## Inspiration
+
+The idea comes from reverse engineering the official
+[Hacker News](https://news.ycombinator.com/)
+[bookmarklet](https://news.ycombinator.com/bookmarklet.html)
+that is advertised on its
+[submit page](https://news.ycombinator.com/submitlink).
+
+# Tech
+
+The code is in plain JavaScript and the only lib used is
+[Vue@3](https://vuejs.org/) loaded via CDN as ESM.
+
+## Tests
+
+None! It's too small and my need doesn't justify too much time on this toy project.
+
+## AI
+
+Part of this code was developed using Github Copilot.
+It also saved me some time using the chat feature which
+is in beta as of Aug 2023.
+
+---
+
+🇸🇪 Made in Sweden by [Alex Ewerlöf](https://alexewerlof.com)
