@@ -1,9 +1,12 @@
 # Intro
 
-This is a tiny web application that takes a URL and
+[This](https://hnlink.alexewerlof.com/)
+is a tiny web application that takes a URL and
 title to generate a link that will directly take you to the Hacker News submit page.
 
 The link can be copied in plain text or rich text format.
+
+▶️ [Try it!](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fhnlink.alexewerlof.com%2F&t=Hacker%20News%20Link%20Generator)
 
 ## Use case
 
