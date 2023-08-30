@@ -40,10 +40,7 @@ const app = createApp({
       if (this.urlError || this.titleError) {
         return ''
       }
-      const u = new URL('https://news.ycombinator.com/submitlink')
-      u.searchParams.set('t', this.title)
-      u.searchParams.set('u', this.url)
-      return u.toString()
+      return `https://news.ycombinator.com/submitlink?u=${encodeURIComponent(this.url)}&t=${encodeURIComponent(this.title)}`
     },
   },
   methods: {
