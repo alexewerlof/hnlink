@@ -16,6 +16,22 @@ readers to share it on Hackernews.
 
 If a post has already been submitted, a resubmit counts as an upvote.
 
+## How does it work?
+
+Hacker News has at least two endpoints for submitting links:
+
+1. `submit`: The submit page which is used when clicking on the "Submit" (in the header) once you are logged in: https://news.ycombinator.com/submit
+2. `submitlink`: The submit link page which is used by the official bookmarklet that's linked from the page above: https://news.ycombinator.com/submitlink
+
+This simple app takes the following two parameters from the form:
+* `u`: The link URL
+* `t`: The link title
+
+It then uses `encodeURIComponent` to append them to the `submitlink` endpoint above:
+
+For your privacy, there's no tracking code in this app (as you can see in the code).
+The entire app runs in your browser and there's no backend or storage.
+
 ## Inspiration
 
 The idea comes from reverse engineering the official
@@ -31,7 +47,8 @@ The code is in plain JavaScript and the only lib used is
 
 ## Tests
 
-None! It's too small and my need doesn't justify too much time on this toy project.
+None! It's too small and my need doesn't justify spending too much time on this toy project. Use it as-is.
+If you want to contribute tests, you're welcome to make a PR.
 
 ## AI
 
