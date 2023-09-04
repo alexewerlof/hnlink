@@ -20,8 +20,8 @@ If a post has already been submitted, a resubmit counts as an upvote.
 
 Hacker News has at least two endpoints for submitting links:
 
-1. `submit`: The submit page which is used when clicking on the "Submit" (in the header) once you are logged in: https://news.ycombinator.com/submit
-2. `submitlink`: The submit link page which is used by the official bookmarklet that's linked from the page above: https://news.ycombinator.com/submitlink
+1. [`/submit`](https://news.ycombinator.com/submit): Used when clicking on the "Submit" in the header
+2. [`/submitlink`](https://news.ycombinator.com/submitlink): Used by the official bookmarklet that's linked from the page above
 
 This simple app takes the following two parameters from the form:
 * `u`: The link URL
